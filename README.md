@@ -45,12 +45,13 @@ By completing this project, you will learn:
 ---
 
 ## 📂 Project Structure
+```bash
 serverless-image-processing/
 ├── lambda_code/
 │   └── lambda_function.py   # Image processing code (resize)
 ├── setup.sh                 # Bash script to deploy the project
 └── README.md                # Documentation
-
+```
 ---
 ## 🚀 Deployment Steps
 
