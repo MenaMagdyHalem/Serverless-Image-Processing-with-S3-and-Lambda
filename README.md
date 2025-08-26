@@ -8,7 +8,7 @@ The solution is **event-driven, scalable, and cost-efficient** since it only run
 
 ---
 
-## Diagram
+## 🖼️ Architecture Diagram
 
 ![Architecture Diagram](Diagram.PNG)
 
