@@ -8,6 +8,12 @@ The solution is **event-driven, scalable, and cost-efficient** since it only run
 
 ---
 
+## Diagram
+
+![Architecture Diagram](Diagram.PNG)
+
+---
+
 ## 🏗️ Architecture
 
 **Workflow:**
@@ -63,4 +69,24 @@ Run the provided setup script:
 chmod +x setup.sh
 ./setup.sh
 ```
+---
+### 3️⃣ Test the Pipeline
+
+1- Upload an image to the source bucket:
+
+```bash
+aws s3 cp test.jpg s3://<SOURCE_BUCKET>/
+```
+
+2- Wait a few seconds for Lambda to process it.
+
+3- Check the destination bucket:
+```bash
+aws s3 ls s3://<DEST_BUCKET>/
+```
+You should see a resized image (e.g., resized-test.jpg).
+
+
+
+
 
